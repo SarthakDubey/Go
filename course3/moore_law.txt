@@ -1,0 +1,17 @@
+Moore's Law is a prediction made by Gordon Moore stating that the number of transistors on a microchip will double
+approximately every two years, leading to exponential growth in computing power and a decrease in cost per transistor.
+
+A few reasons for why Moore's law to stop being true are:
+
+Power-Temperature:
+1) Increase in number of transistors requires more power to run them, thus producing more heat and there's limitation to
+that like melting circuit board, heat exchange fans/pumps capacity etc.
+
+Dynamic Power: P = a * C * F * V^2
+2) Smaller transistors switch faster, need to run at lower voltage to reduce power : V is squared.
+3) So, Dynamic power consumption can be reduced by voltage scaling.
+4) Voltage scaling does not prevent power leakage.
+
+Dennard Scaling:
+5) Exponential increase in density would lead to exponential increase in speed
+6) Transistor’s need a minimum voltage to switch, and voltage reduction has lower limits due to noise.

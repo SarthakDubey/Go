@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"CourseraGo/assesments"
+	"CourseraGo/course1"
 	"testing"
 )
 
@@ -21,7 +21,7 @@ func Test_makeJson(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			assesments.MakeJsonHelper(&tt.args.name, &tt.args.address)
+			course1.MakeJsonHelper(&tt.args.name, &tt.args.address)
 		})
 	}
 }

@@ -1,4 +1,4 @@
-package assesments
+package course1
 
 import (
 	"bufio"

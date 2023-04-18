@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"CourseraGo/assesments"
+	"CourseraGo/course1"
 	"reflect"
 	"testing"
 )
@@ -25,7 +25,7 @@ func TestInsertAndSortSlice(t *testing.T) {
 			t.Parallel()
 			nums := make([]int, len(*tt.args.nums))
 			copy(nums, *tt.args.nums)
-			assesments.InsertAndSortSlice(tt.args.num, &nums)
+			course1.InsertAndSortSlice(tt.args.num, &nums)
 			if !reflect.DeepEqual(nums, tt.want) {
 				t.Errorf("InsertAndSortSlice() = %v, want %v", *tt.args.nums, tt.want)
 			}

@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"CourseraGo/assesments"
+	"CourseraGo/course1"
 	"strconv"
 	"testing"
 )
@@ -23,7 +23,7 @@ func TestCheck(t *testing.T) {
 		test := test
 		t.Run(test.inputString, func(t *testing.T) {
 			t.Parallel()
-			result := assesments.Check(test.inputString)
+			result := course1.Check(test.inputString)
 			if result != test.expectedOutput {
 				t.Errorf("Expected %s, got %s", strconv.FormatBool(test.expectedOutput), strconv.FormatBool(result))
 			}

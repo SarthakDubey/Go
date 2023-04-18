@@ -1,12 +1,16 @@
 package main
 
-import "CourseraGo/assesments"
+import (
+	"CourseraGo/course1"
+	"CourseraGo/course2"
+)
 
 func main() {
-	assesments.Hello()
-	assesments.Trunc()
-	assesments.Findian()
-	assesments.Slice()
-	assesments.MakeJson()
-	assesments.ReadFileFirstLastNameFile()
+	course1.Hello()
+	course1.Trunc()
+	course1.Findian()
+	course1.Slice()
+	course1.MakeJson()
+	course1.ReadFileFirstLastNameFile()
+	course2.BubbleSortUserInput()
 }

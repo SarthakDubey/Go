@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"CourseraGo/assesments"
+	"CourseraGo/course1"
 	"bufio"
 	"os"
 	"reflect"
@@ -13,9 +13,9 @@ func TestStreamReader(t *testing.T) {
 	tests := []struct {
 		name     string
 		filename string
-		want     []assesments.Person
+		want     []course1.Person
 	}{
-		{name: "Testing sample data", filename: "data/first_last_name.txt", want: []assesments.Person{}},
+		{name: "Testing sample data", filename: "data/first_last_name.txt", want: []course1.Person{}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -24,9 +24,9 @@ func TestStreamReader(t *testing.T) {
 			for scanner.Scan() {
 				line := scanner.Text()
 				fields := strings.Split(line, " ")
-				tt.want = append(tt.want, *assesments.CreatePerson(fields[0], strings.Join(fields[1:], " ")))
+				tt.want = append(tt.want, *course1.CreatePerson(fields[0], strings.Join(fields[1:], " ")))
 			}
-			if got := assesments.StreamReader(bufio.NewScanner(file)); !reflect.DeepEqual(got, tt.want) {
+			if got := course1.StreamReader(bufio.NewScanner(file)); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("StreamReader() = %v, want %v", got, tt.want)
 			}
 		})

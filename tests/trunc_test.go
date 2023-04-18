@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"CourseraGo/assesments"
+	"CourseraGo/course1"
 	"testing"
 )
 
@@ -21,7 +21,7 @@ func TestTruncHelper(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
-			if got := assesments.TruncHelper(tt.args.input); got != tt.want {
+			if got := course1.TruncHelper(tt.args.input); got != tt.want {
 				t.Errorf("TruncHelper() = %v, want %v", got, tt.want)
 			}
 		})
