@@ -13,4 +13,5 @@ func main() {
 	course1.MakeJson()
 	course1.ReadFileFirstLastNameFile()
 	course2.BubbleSortUserInput()
+	course2.GenDisplaceFnRunner()
 }
